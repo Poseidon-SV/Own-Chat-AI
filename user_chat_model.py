@@ -165,7 +165,7 @@ def main():
     def user_chat():        
 
         chat_sample = st.text_area("You can give your own chat, text must contain atleast 5,000 chats or atleast 50,000 words OR you can drag n drop chat.txt file")
-        st.write("_You can export chat form your WhatsApp by clicking 3-dots by selecting your 'Chats' > 'Chat History' > 'Export'_")
+        st.write("_You can export chat form your WhatsApp by clicking 3-dots by selecting your 'Chats' > 'Chat History' > 'Export'_. :red[Please remove all the dates and times as it will count in incorrect data.]")
         data = st.file_uploader("Upload a Chat sample", type=["txt"])
         chatting_length = st.number_input("AI genrated chat lenght", 0, 5000, 2000)
 
