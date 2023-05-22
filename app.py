@@ -4,8 +4,7 @@ from chat_model import *
 import user_chat_model
 
 context = torch.zeros((1, 1), dtype=torch.long, device=device)
-chatting_length = 2000
-next = False
+chatting_length = 1500
 
 st.title("Own Chat 🤖")
 
